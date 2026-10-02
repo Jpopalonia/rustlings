@@ -13,7 +13,16 @@
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
 fn main() {
-    // You can optionally experiment here.
+    // empty main for testing
+}
+
+fn calculate_price_of_apples(quantity: u32) -> u32 {
+    // An apple costs 2, unless 40 or more are purchased in 1 transaction, then 1 each
+    if quantity <= 40 {
+        quantity * 2
+    } else {
+        quantity
+    }
 }
 
 // Don't change the tests!
