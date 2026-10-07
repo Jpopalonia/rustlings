@@ -11,7 +11,7 @@ mod tests {
 
         // TODO: Make this an if-let statement whose value is `Some`.
         if let Some(String) = optional_target {
-            assert_eq!(target, target);
+            assert_eq!(optional_target, target);
         }
 
         /* word = optional_target {
@@ -34,7 +34,7 @@ mod tests {
         // adds another layer of `Option`. You can do nested pattern matching
         // in if-let and while-let statements.
         while let Some(i8) = optional_integers.pop() {
-            assert_eq!(integer, cursor);
+            assert_eq!(optional_integers, cursor);
             cursor -= 1;
         }
 
